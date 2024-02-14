@@ -1,0 +1,295 @@
+:root {
+    --neutral1: #f3e8e9;
+    --text-color: #000000;
+    --neutral2: #DDC1C6;
+    --primary1: #76333a;
+    --accent1: #9C96D6;
+    --accent2: #7067CF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-header {
+    background-color: var(--neutral1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary1);
+}
+
+/* default links override */
+a {
+    color: var(--primary1);
+    transition-duration: 250ms !important;
+}
+
+a:hover {
+    color: var(--neutral2);
+}
+
+/* bootstrap nav customised */
+nav {
+    transition-duration: 250ms !important;
+}
+
+.nav-link:hover {
+    transform: translate(0, -1px) !important;
+}
+
+.nav-border {
+    box-shadow:inset 0px -1px 0px 0.5px #00000012;
+    box-shadow: 0px 0px 6px 2px #00000010;
+}
+
+/* footer styles */
+.footer-top {
+    color: var(--neutral1);
+    padding-top: 2vh;
+    box-shadow:inset 0px 1px 0px 0.5px #00000012;
+    box-shadow: 0px 0px 6px 2px #00000010;
+    background-color: var(--primary1); 
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* display font modifier */
+.font-display {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* button styles */
+.button {
+    color: white;
+    background-color: var(--accent2);
+    padding: 10px 28px;
+    text-decoration: none;
+    border-radius: 120px;
+    transition-duration: 250ms;
+    display: inline-block;
+    box-shadow: none;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--accent1);
+    transform: translate(0, -2px) scaleX(1.1);
+    box-shadow: 0 4px 12px -2px var(--accent1);
+    font-weight: 700 !important;
+}
+
+.button-primary {
+    color: white;
+    background-color: var(--primary1);
+    padding: 10px 24px 10px 24px;
+    text-decoration: none;
+    border-radius: 120px;
+    transition-duration: 1000ms;
+    display: inline-block;
+}
+
+.button-primary:hover {
+    color: white;
+    background-color: #9c575e;
+    padding: 10px 24px;
+    font-weight: 600 !important;
+    transform: scaleX(1.07);
+}
+
+.button-transparent {
+    color: var(--primary1);
+    background-color: transparent;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 120px;
+    transition-duration: 1000ms;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.button-transparent:hover {
+    color: white;
+    background-color: var(--primary1);
+    font-weight: 600;
+    transform: scaleX(1.1);
+}
+
+.button-primary-arrow {
+    transition-duration: 600ms;
+}
+
+.button-transparent-arrow {
+    margin-right: -20px;
+    transition-duration: 600ms;
+}
+
+.button-transparent-arrow-left {
+    margin-left: -20px;
+    transition-duration: 600ms;
+}
+
+.button-transparent:hover .button-transparent-arrow, .button-primary:hover .button-primary-arrow {
+    margin-right: 0px;
+    transform: translate(6px, 0);
+}
+
+.button-transparent:hover .button-transparent-arrow-left {
+    margin-left: 0px;
+    transform: translate(-6px, 0);
+}
+
+/* colour modifiers */
+.n2 {
+    color: var(--neutral2) !important;
+}
+
+.p1 {
+    color: var(--primary1) !important;
+}
+
+.a1 {
+    color: var(--accent1) !important;
+}
+
+.a2 {
+    color: var(--accent2) !important;
+}
+
+/* google material symbols customised */
+.material-symbols-rounded {
+    vertical-align: text-bottom;
+    font-size: 20px !important;
+}
+
+.material-symbols-rounded-fill {
+    font-family: 'Material Symbols Rounded';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+    font-variation-settings: 'FILL' 1;
+}
+
+/* font weight modifiers */
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* lg */
+@media (min-width: 992px) {
+    .h-image {
+        margin: -50px 0;
+    }
+
+    .button-transparent-left {
+        margin-left: 5.5vw;
+        margin-right: -5.5vw;
+    }
+
+    .button-transparent-right {
+        margin-left: -5.5vw;
+        margin-right: 5.5vw;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .h-image {
+        margin: -100px 0;
+    }
+}
+
+/* xxl */
+.max-width-2569 {
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+/* more modifiers & classes required for assignment :) */
+.duplicate-shadow-right {
+    text-shadow: 12px 0px 0px rgb(156, 150, 214, .7);
+}
+
+.work-experience {
+    background-color: inherit;
+}
+
+.skills {
+    background-color: inherit;
+}
+
+.learn-more {
+    background-color: var(--neutral2);
+}
+
+.background-image-header {
+    background-image: url('/img/biography-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+
+}
+
+.languages {
+    background-color: rgba(156, 150, 214, .5);
+    border: 1px solid var(--accent2);
+    border-radius: 10px !important;
+    backdrop-filter: blur(4px);
+}
+
+.education {
+    background-color: rgba(156, 150, 214, .5);
+    border: 1px solid var(--accent2);
+    border-radius: 10px !important;
+    backdrop-filter: blur(4px);
+}
+
+.interests {
+    background-color: inherit;
+}
+
+.projects {
+    background-color: inherit;
+}
+
+.project {
+    background-color: inherit;
+}
+
+/* for scrolling to contact section */
+#contact-me {
+    background-color: var(--neutral2);
+}

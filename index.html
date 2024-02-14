@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo's portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cardstyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,600,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md justify-content-between sticky-top" id="navbar"
+        style="backdrop-filter: blur(6px); background-color: rgba(255, 255, 255, 0.6);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold font-display col-3" href="#">
+                <span class="material-symbols-rounded p1"
+                    style="font-size: 28px !important;">radio_button_checked</span>
+                Hugo's portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-6 justify-content-center " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium p1" aria-current="page" href="#">
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/about_me">
+                            Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/portfolio">
+                            Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/gallery">
+                            Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse col-3 justify-content-end">
+                <a class="button-primary fw-medium py-2 me-4" href="#contact-me">
+                    Contact <span class="material-symbols-rounded button-primary-arrow">north_east</span></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <header class="container">
+        <div class="row align-content-center align-items-center vh-100">
+            <div class="col-md me-lg-4">
+                <h1 class="fw-800 mb-3 fs-1 font-display" style="font-size: 2.75em !important;">Welcome to my <span
+                        class="a2">portfolio</span>👋</h1>
+                <p class="fs-5 lh-sm">Hi, I'm <span class="p1 fw-semibold ">Hugo</span>. I'm an international student
+                    studying computer science. I bring a motivated, detail-oriented, and quick-learning approach to your
+                    team.</p>
+                <p class="fs-5 lh-sm">Currently seeking a job for anything related to CS or programming!</p>
+                <a class="button fw-medium mt-2 mb-3" href="#contact-me">
+                    <span class="material-symbols-rounded">alternate_email</span> Me!</a>
+            </div>
+            <div class="col-md d-none d-md-inline z-1 " style="height: 70%;">
+                <svg height="90%" width="100%" style="margin-right: -5px;">
+                    <defs>
+                        <pattern id="doodad" width="36" height="36" viewBox="0 0 40 40" patternUnits="userSpaceOnUse"
+                            patternTransform="">
+                            <rect width="100%" height="100%" fill="rgba(247, 250, 252,0)" />
+                            <path
+                                d="M0 8.5a 11.5 11.5 0 0 1 11.5 11.5a 8.5 8.5 0 0 0 8.5 8.5v3a-11.5-11.5 0 0 1-11.5-11.5a-8.5-8.5 0 0 0-8.5-8.5z"
+                                fill="rgba(118, 51, 58,1)" />
+                            <path
+                                d="M20 28a 8-8 0 0 0 8-8a 12-12 0 0 1 12-12v4a-8 8 0 0 0-8 8a-12 12 0 0 1-12 12zM20 68a 8-8 0 0 0 8-8a 12-12 0 0 1 12-12v4a-8 8 0 0 0-8 8a-12 12 0 0 1-12 12z"
+                                fill="rgba(221, 193, 198,1)" />
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#doodad)" height="200%" width="200%" />
+                </svg>
+            </div>
+
+            <div class="z-1 ">
+                <!-- make this bounce -->
+                <p class="text-center fst-italic user-select-none">learn more ✨<br>
+                    <span class="material-symbols-rounded p1" style="font-size: 30px !important;">expand_more</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- section 1 - experience -->
+    <main class="container-fluid p-0 main-header" style="margin-top: -150px;">
+        <img src="./img/stacked-peaks-haikei-top.svg" width="100%" class="z-n1 img-fluid h-image">
+        <div class="container pt-4">
+            <div class="mb-4 mb-lg-5">
+                <h1 class="p1 font-display fw-900 z-3"
+                    style="position: relative; transform: rotate(-4deg); margin-top: -50px; top: 0;">Experience</h1>
+                <h1 class="n2 d-none d-md-block font-display fw-600 z-2"
+                    style="position: relative; transform: rotate(-5.75deg); margin-top: -47px; top: 0; margin-left: 40px;">
+                    Experience</h1>
+                <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                    style="position: relative; transform: rotate(-7.5deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                    Experience</h1>
+            </div>
+
+            <div class="row row-cols-lg-2 align-content-center align-items-center mb-4">
+                <div class="card-collage-container col-lg-7">
+                    <div style="--r: -15; --y: 105; --x: -90; z-index: 1;" class="card-collage">
+                        <a href="https://c5.rbxcdn.com/3082775f793f1d953f50a75943c21a7a" target="_blank">
+                        <img src="https://c5.rbxcdn.com/3082775f793f1d953f50a75943c21a7a" alt="Japanese Dojo" />
+                    </a>
+                    </div>
+                    <div style="--r: -5; --y: -25; --x: 0; z-index: 2;" class="card-collage">
+                        <a href="https://c0.rbxcdn.com/b088d3d4f2a7fb58da1b6a93cd0221c7" target="_blank">
+                            <img src="https://c0.rbxcdn.com/b088d3d4f2a7fb58da1b6a93cd0221c7"
+                                alt="Abandoned industrial building" />
+                        </a>
+                    </div>
+                    <div style="--r: 15; --y: 55; --x: -20; z-index: 3;" class="card-collage">
+                        <a href="https://c6.rbxcdn.com/877ba90bef6ecb4a10a5127e1b0ab62e" target="_blank">
+                            <img src="https://c6.rbxcdn.com/877ba90bef6ecb4a10a5127e1b0ab62e" alt="Overgrown vegetation" />
+                        </a>
+                    </div>
+                    <div style="--r: 5; --y: 185; --x: 100; z-index: 4; scale: 1.1;" class="card-collage">
+                        <a href="https://c7.rbxcdn.com/08bd838c14669f3739c16c400713c7dd" target="_blank">
+                            <img src="https://c7.rbxcdn.com/08bd838c14669f3739c16c400713c7dd"
+                                alt="Bedroom with carpentry workshop" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h4 class="p1 font-display fw-800 mt-4 mt-lg-0">Building & programming 🛠️</h4>
+                    <p class="fs-5">With over 5 years of experience, I am very passionate about programming and building
+                        immersive and interactive virtual worlds. I have contributed to millions of players worldwide!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-2 align-content-center align-items-center" style="margin-bottom: -50px;">
+                <div class="col-lg-5">
+                    <h4 class="p1 font-display fw-800 mt-4 mt-lg-0 text-lg-end">Website designing 🏗️</h4>
+                    <p class="fs-5 text-lg-end">I can create visually stunning and functional websites using a diverse
+                        range of front-end and back-end technologies!</p>
+                </div>
+                <div class="card-collage-container col-lg-7 px-5 px-xl-0" style="margin-bottom: -100px;">
+                    <div style="--r: -10; --y: 0; --x: -10; z-index: 1;" class="card-collage">
+                        <a href="https://lh3.googleusercontent.com/pw/ABLVV85vwRifCNf8lrclVGTdMfWTmqM4hJZvsljzl-lU1L1fy3oJlFnU8J2exqFH1Gg7USmtAF9pfDqCxSVByDI5raWxAMG7oe9UdLgnkP8V_jxExv0FimCipQEpPApNCbsLCiQVIg9SH2fNj4ot3PS_s6rZLA=w1265-h684-s-no?authuser=0" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ABLVV85vwRifCNf8lrclVGTdMfWTmqM4hJZvsljzl-lU1L1fy3oJlFnU8J2exqFH1Gg7USmtAF9pfDqCxSVByDI5raWxAMG7oe9UdLgnkP8V_jxExv0FimCipQEpPApNCbsLCiQVIg9SH2fNj4ot3PS_s6rZLA=w1265-h684-s-no?authuser=0"
+                                alt="Gun skins workshop contact page" />
+                        </a>
+                    </div>
+                    <div style="--r: 10; --y: 25; --x: 5; z-index: 2;" class="card-collage">
+                        <a href="https://lh3.googleusercontent.com/pw/ABLVV86RrtaWk7SygwJz0pDuh8PU_KPAuVAcpyXorjRmRFatyMMuv996AIzCbhTCfC7OOXK_Lj1kYqryaM4faWKKf_8bEX6JXvysU7dvHPYSWiJOGli_246cbJ-5q7OjYJ3LXVZL2WnggRC1LjODf_6PSCeNPQ=w1265-h687-s-no?authuser=0" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ABLVV86RrtaWk7SygwJz0pDuh8PU_KPAuVAcpyXorjRmRFatyMMuv996AIzCbhTCfC7OOXK_Lj1kYqryaM4faWKKf_8bEX6JXvysU7dvHPYSWiJOGli_246cbJ-5q7OjYJ3LXVZL2WnggRC1LjODf_6PSCeNPQ=w1265-h687-s-no?authuser=0"
+                                alt="Game database library page" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-2 align-content-center align-items-center">
+                <div class="card-collage-container col-lg-7" style="margin-bottom: -24px;">
+                    <div style="--r: 15; --y: 105; --x: -90; z-index: 1;" class="card-collage">
+                        <a href="https://lh3.googleusercontent.com/pw/ABLVV87sluojKUPso0M-uq-ELiivxVDkAznOorf3LR4VwO65A2-AMh4Uj0z4YgNCvkS2105vtqsV2WEla367qfwIuGO1gBRSQFlGTPEyON1lF407E5Hc0up8sopNIn6sTINxmrADw3F_KeUA8JyTbtkEibqaiQ=w624-h245-s-no?authuser=0" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ABLVV87sluojKUPso0M-uq-ELiivxVDkAznOorf3LR4VwO65A2-AMh4Uj0z4YgNCvkS2105vtqsV2WEla367qfwIuGO1gBRSQFlGTPEyON1lF407E5Hc0up8sopNIn6sTINxmrADw3F_KeUA8JyTbtkEibqaiQ=w624-h245-s-no?authuser=0"
+                                alt="Video editing in Vegas Pro" />
+                        </a>
+                    </div>
+                    <div style="--r: 10; --y: 70; --x: 0; z-index: 2; scale: .7;" class="card-collage">
+                        <a href="https://tr.rbxcdn.com/0de6cbe49953c218a76122a597f56ed7/768/432/Image/Png" target="_blank">
+                            <img src="https://tr.rbxcdn.com/0de6cbe49953c218a76122a597f56ed7/768/432/Image/Png"
+                                alt="Game thumbnail depicting gameplay" />
+                        </a>
+                    </div>
+                    <div style="--r: 5; --y: -25; --x: 90; z-index: 3; scale: .7;" class="card-collage">
+                        <a href="https://lh3.googleusercontent.com/pw/ABLVV85Yi5l8OScBYYbnuOrQFKTExJocCJbaahxYLPsvFCRkcH5x4BaKN8nynu4lW27hRfJy2VgqCGG3GTqg1N_pNknlbFahOyMBkSY4pLI4cOHMCkJK43waVy-eVcHXhj8sZjeSs_44RYIbfr4Jj7qWyGAnBg=w624-h468-s-no?authuser=0" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ABLVV85Yi5l8OScBYYbnuOrQFKTExJocCJbaahxYLPsvFCRkcH5x4BaKN8nynu4lW27hRfJy2VgqCGG3GTqg1N_pNknlbFahOyMBkSY4pLI4cOHMCkJK43waVy-eVcHXhj8sZjeSs_44RYIbfr4Jj7qWyGAnBg=w624-h468-s-no?authuser=0"
+                                alt="Painting of winter landscape" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <h4 class="p1 font-display fw-800">Creative arts 🎨</h4>
+                    <p class="fs-5">I'm efficient with Photoshop & Sony Vegas. I can draw digital art, create
+                        eye-catching thumbnails and edit videos! I also translate from English to Dutch, contributing to
+                        tens of millions of people.</p>
+                </div>
+            </div>
+            <a class="button-transparent fs-5 font-display fw-500 z-1 position-absolute" href="/gallery">
+                Want to 👀 more pics?<span
+                    class="material-symbols-rounded fs-2 button-transparent-arrow">navigate_next</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- section 2 - skills & tools -->
+    <div class="container-fluid p-0 skills">
+        <img src="./img/stacked-peaks-haikei-2.svg" width="100%" class="z-n1 img-fluid h-image">
+        <div class="container pt-4">
+            <div class="mb-4 mb-lg-5">
+                <h1 class="p1 font-display fw-900 z-3"
+                    style="position: relative; transform: rotate(4deg); margin-top: -50px; top: 0;">Skills & tools</h1>
+                <h1 class="n2 d-none d-md-block font-display fw-600 z-2"
+                    style="position: relative; transform: rotate(2deg); margin-top: -47px; top: 0; margin-left: 40px;">
+                    Skills & tools</h1>
+                <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                    style="position: relative; transform: rotate(0deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                    Skills & tools</h1>
+            </div>
+            <h5 class="a2 font-display lh-1 mt-5">
+                Programming languages</h5>
+            <div class="my-5">
+                <div class="position-relative z-1">
+                    <p class="text-center fs-5">Lua, HTML / CSS, JavaScript, C#</p>
+                </div>
+                <div class="text-center opacity-75" style="transform: scale(1.2); margin-top: -55px;">
+                    <span class="material-symbols-rounded-fill fs-1 d-block a1 user-select-none duplicate-shadow-right"
+                        style="transform:scale(2.5) translate(-36px, 0); margin-bottom: -20px;">
+                        star</span>
+                    <span class="fs-2 a2 font-display fw-900 d-block" style="transform: scaleX(1.15);">Proficient</span>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-5 pb-4">
+                <div class="col">
+                    <div class="position-relative z-1">
+                        <p class="text-center fs-5">Java, SQL, XAML, WPF</p>
+                    </div>
+                    <div class="text-center opacity-75" style="transform: scale(1.2); margin-top: -55px;">
+                        <span class="material-symbols-rounded-fill fs-1 d-block a1 user-select-none"
+                            style="transform:scale(2.5) translate(-24px, 0); margin-bottom: -20px;">
+                            star</span>
+                        <span class="fs-2 a2 font-display fw-900 d-block"
+                            style="transform: scaleX(1.15);">Skilled</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative z-1">
+                        <p class="text-center fs-5">PHP, Processing, Bash, C++</p>
+                    </div>
+                    <div class="text-center opacity-75" style="transform: scale(1.2); margin-top: -50px;">
+                        <span class="material-symbols-rounded-fill fs-1 d-block a1 user-select-none"
+                            style="transform:scale(2) translate(-58px, 0); margin-bottom: -24px;">
+                            thumb_up</span>
+                        <span class="fs-2 a2 font-display fw-900 d-block"
+                            style="transform: scaleX(1.15);">intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="z1 position-relative mt-5 mb-4 mb-xl-5">
+                <div class="row row-cols-1 row-cols-xl-2 ">
+                    <div class="col-xl-8 col-xxl-7">
+                        <h5 class="mb-0 a2 font-display">
+                            Web technologies</h5>
+                        <p class="">
+                            Back-end: React.js, React Router, Axios, Apache, PHP APIs, ASP.NET, XAMPP stack <br>
+                        Front-end: Bootstrap, Tailwind CSS</p>
+                        <h5 class="mb-0 a2 font-display">
+                            Programs</h5>
+                        <p class="">
+                            Visual Studio & VSCode, Roblox Studio, Photoshop, Excel functions, Vegas Pro, Arduino, MySQL Workbench
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-xxl-5">
+                        <img src="./img/blob-scatter-haikei.svg" class="float-md-end user-select-none img-fluid"
+                            style="max-height: 124px; margin-top: -24px;" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- section 3 - work history -->
+    <section class="container-fluid p-0 main-header">
+        <img src="./img/stacked-peaks-haikei.svg" width="100%" class="z-n1 img-fluid h-image">
+        <div class="container pt-4 pb-5">
+            <div class="mb-5">
+                <h1 class="p1 font-display fw-900 z-3"
+                    style="position: relative; transform: rotate(-4deg); margin-top: -50px; top: 0;">Work history</h1>
+                <h1 class="n2 d-none d-md-block font-display fw-600 z-2"
+                    style="position: relative; transform: rotate(-6deg); margin-top: -47px; top: 0; margin-left: 40px;">
+                    Work history</h1>
+                <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                    style="position: relative; transform: rotate(-8deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                    Work history</h1>
+            </div>
+
+            <h3 class="p1 font-display fw-800 mt-lg-5 text-center">Presently ☀️</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 align-items-center">
+                <div class="col">
+                    <div class="card" onclick='window.open("https://www.ultrawgames.com/");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://lirp.cdn-website.com/3563a0e9/dms3rep/multi/opt/logo16-1920w.png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Ultraw Games</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Translator | 2017 - now</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Sole English to Dutch translator for three hit simulator games and
+                                            counting.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick='window.open("https://www.roblox.com/groups/3534363/Naval-Roleplay-Community#!/about");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://tr.rbxcdn.com/fabc15f78b66aea2764208e6beca4096/150/150/Image/Png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Naval Roleplay Community</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Developer | 2023 - now</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Developing responsive and interactive UI, and new/expanded game
+                                            systems.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick='window.open("https://www.roblox.com/groups/15905364/Two-State-Entertainment#!/about");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://tr.rbxcdn.com/374f4f6a1893b42c70f19e292b90f937/150/150/Image/Png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Two State Entertainment</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Developer | 2022 - now</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Developing platformer and puzzle games.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick='window.open("https://create.roblox.com/talent/teams/7628a878-0aeb-4f1e-b400-ce139e211259");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://tr.rbxcdn.com/4b73567ed982167b52497022a2cb2484/150/150/Image/Png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Global Localization Services</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Translator | 2021 - now</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Member of the experienced & certified translators service.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="p1 font-display fw-800 mt-4 text-center">Previously 🌑</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 align-items-center">
+                <div class="col">
+                    <div class="card" onclick='window.open("https://www.netropolix.be/en/");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://yt3.googleusercontent.com/rD6C5Mq2CXcmv2Lj_5gFqn3_YjOKiYu5EaSesC8dsWHVdBxBtRNwchc1Km9mZcXEcdSIDhYL=s900-c-k-c0x00ffffff-no-rj"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Netropolix</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Intern Web Dev | 2023</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Developed, designed, and implemented new features for their React website
+                                            in-person.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" onclick='window.open("https://twitter.com/BlaqkMagicRBX");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://pbs.twimg.com/profile_images/1726834436757430272/eRqrBPrX_400x400.jpg"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Blaqk Magic</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Map Designer | 2023</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Designed and built map for an upcoming action game.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick='window.open("https://www.roblox.com/groups/5371807/Studio-2000#!/about");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://tr.rbxcdn.com/9b509ee00314fc405a47b7540765299e/150/150/Image/Png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Studio 2000</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Developer | 2023</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Developed game systems for an upcoming horror game.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" onclick='window.open("https://www.youtube.com/c/alvinblox");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://yt3.googleusercontent.com/SOLdE9L_bpxCHmJ9qdD5aCegL2FbWRQSZNmdnpRxqKWcXvrOAGjQs-KPlWeIWGZlUBINxl4JtQ=s176-c-k-c0x00ffffff-no-rj"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        AlvinBlox</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Video Editor | 2021</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Video editor for ~10 minute programming videos.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"
+                        onclick='window.open("https://www.youtube.com/@hugothegamer6254/featured");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRRyx1JQ-NQqLpCLgTppKJcBXy9ZbnOYFR47vd2=s176-c-k-c0x00ffffff-no-rj"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        My channel</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Youtuber | 2016 - 2021</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            Recorded, edited and uploaded gaming videos tailored towards
+                                            teenagers.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" onclick='window.open("https://twitter.com/paradoxum_games?lang=en");return false;'
+                        style="cursor: pointer;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="https://tr.rbxcdn.com/8f3f8aa692328a30d0bfe969491905b1/150/150/Image/Png"
+                                    class="img-fluid card-img">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="mb-1 fw-600 font-display lh-1">
+                                        Paradoxum Games</h5>
+                                    <p class="mb-1 fw-500 font-display p1">
+                                        Translator | 2019</p>
+                                    <p class="card-text lh-sm"><small class="">
+                                            English to Dutch translator for hit strategy game.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 - learn more -->
+    <div class="container-fluid p-0">
+        <img src="./img/stacked-waves-haikei.svg" width="100%" class="z-n1 img-fluid h-image">
+        <div class="learn-more py-lg-5">
+            <section class="container pt-4">
+                <div class="mb-4">
+                    <h1 class="p1 font-display fw-900 z-3"
+                        style="position: relative; transform: rotate(2deg); margin-top: -50px; top: 0;">Next up</h1>
+                    <h1 class="p1 d-none d-md-block font-display fw-600 z-2"
+                        style="position: relative; transform: rotate(0deg); margin-top: -47px; top: 0; margin-left: 40px; opacity: .2;">
+                        Next up</h1>
+                    <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                        style="position: relative; transform: rotate(-2deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                        Next up</h1>
+                </div>
+                <div class="row align-content-center align-items-center pt-4">
+                    <div class="col-lg-5 text-lg-end button-transparent-left">
+                        <a class="button-transparent fs-5 font-display fw-500" href="/about_me">
+                            Learn more about me<span
+                                class="material-symbols-rounded fs-2 button-transparent-arrow">navigate_next</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 text-lg-center">
+                        <h5 class="mt-1 ps-4 ps-lg-0">or</h5>
+                    </div>
+                    <div class="col-lg-5 text-lg-start button-transparent-right">
+                        <a class="button-transparent fs-5 font-display fw-500" href="/portfolio">
+                            still not convinced?<span
+                                class="material-symbols-rounded fs-2 button-transparent-arrow">navigate_next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="container pt-5 pb-5 text-center">
+                <div class="">
+                    <h4>Okay, ready to get in touch?</h4>
+                    <a class="button-transparent fs-5 font-display fw-500" href="#contact-me">
+                        Let's get talking<span
+                            class="material-symbols-rounded fs-2 button-transparent-arrow">navigate_next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- section 5 - contact me -->
+    <section id="contact-me" style="padding-top: 40px; margin-top: -40px;">
+        <div class="container-fluid p-0 pt-5">
+            <div class="">
+                <div class="container pt-5">
+                    <div class="mb-4">
+                        <h1 class="p1 font-display fw-900 z-3"
+                            style="position: relative; transform: rotate(1deg); margin-top: -50px; top: 0;">Contact me</h1>
+                        <h1 class="p1 d-none d-md-block font-display fw-600 z-2"
+                            style="position: relative; transform: rotate(-1deg); margin-top: -47px; top: 0; margin-left: 40px; opacity: .2;">
+                            Contact me</h1>
+                        <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                            style="position: relative; transform: rotate(-3deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                            Contact me</h1>
+                    </div>
+                    <div class="mx-lg-5 px-lg-5">
+                        <h4 class="p1 pt-3 font-display fw-800">Send me an email!</h4>
+                        <p class="m-0">Work related email: <a class="email" href="mailto:hugoli.atwork@gmail.com">hugoli.atwork@gmail.com</a></p>
+                        <p class="m">Personal email: <a class="email" href="mailto:hu8go8li@gmail.com">hu8go8li@gmail.com</a></p>
+                        <p class="m-0">Aston University email: <a class="email" href="mailto:230422898@aston.ac.uk">230422898@aston.ac.uk</a><br>
+                        Student ID: 230422898
+                        </p>
+                    </div>
+                </div>
+                <section class="container pt-5 pb-5">
+                    <div class="pb-5 mx-lg-5 px-lg-5">
+                        <h4 class="p1 font-display fw-800 text-center">Enquire here</h4>
+                        <div class="mb-2">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-2">
+                            <label for="inputConfirmEmail" class="form-label">Confirm email address</label>
+                            <input type="email" class="form-control" id="inputConfirmEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="mb-2 col-8 col-md-4">
+                                <label for="inputDateTime" class="form-label">Date & time</label>
+                                <input type="datetime-local" class="form-control" id="inputDateTime">
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <label for="inputDuration" class="form-label">Duration</label>
+                                <input type="number" class="form-control" id="inputDuration" aria-describedby="durationHelp" placeholder="-">
+                                <div id="durationHelp" class="form-text">in minutes</div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="inputText" class="form-label">Message</label>
+                            <textarea type="text" class="form-control" id="inputText" rows="5"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <a class="button-transparent fs-5 font-display fw-500" href="#">
+                                Send message<span
+                                    class="material-symbols-rounded fs-2 button-transparent-arrow ps-2">send</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <div class="footer-top">
+        <footer class="container text-center py-5">
+            <ul class="nav justify-content-center list-unstyled">
+                <li class=""><a href="https://github.com/unchihugo" target="_blank" class="footer-link"><img
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-fluid"
+                            width="20px" style="margin-top: -4px; filter:invert(1);"></a></li>
+                <li class="ms-3"><a href="https://create.roblox.com/talent/creators/54998200" target="_blank"
+                        class="footer-link"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Roblox_Studio_logo_-_2022.svg/640px-Roblox_Studio_logo_-_2022.svg.png"
+                            class="img-fluid" width="20px"
+                            style="margin-top: -4px; filter:brightness(0) invert(1);"></a></li>
+                
+                <li class="ms-3"><a href="https://www.linkedin.com/in/hugo-li-474a8424b/" target="_blank" class="footer-link"><img
+                            src="https://cdn-icons-png.flaticon.com/512/61/61109.png" class="img-fluid ms-1"
+                            width="20px" style="margin-top: -4px; filter:invert(1);"></a></li>
+                            <li class="ms-4"><a
+                        href="https://docs.google.com/document/d/16hz7TbAUuhvHlPkhUPIAliY94eFtlBoi3-d6uV7l7F8/edit?usp=sharing" target="_blank"
+                        class="footer-link">Paper CV<span class="material-symbols-rounded ms-1">description</span></a>
+                </li>
+                <li class="ms-4"><a href="#" class="footer-link">Back to top<span
+                            class="material-symbols-rounded ms-1">arrow_upward</span></a></li>
+            </ul>
+            <blockquote class="n2 m-0 mt-5 fw-700 font-display">Hugo Li</blockquote>
+            <blockquote class="n2 small fst-italic">© Copyright 2024</blockquote>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/navscroll.js"></script>
+    <script src="./javascript/card-collage-hover.js"></script>
+</body>
+
+</html>
