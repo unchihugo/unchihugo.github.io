@@ -289,6 +289,23 @@ nav {
     background-color: inherit;
 }
 
+.submit {
+    background-color: inherit;
+}
+
+.thumbnail-img {
+    object-fit: cover;
+}
+
+.email {
+    color: var(--accent2);
+    text-decoration: none;
+}
+
+.email:hover {
+    color: var(--accent1);
+}
+
 /* for scrolling to contact section */
 #contact-me {
     background-color: var(--neutral2);

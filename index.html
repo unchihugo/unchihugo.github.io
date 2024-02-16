@@ -59,8 +59,8 @@
 
     <!-- hero -->
     <header class="container">
-        <div class="row align-content-center align-items-center vh-100">
-            <div class="col-md me-lg-4">
+        <div class="row align-content-center align-items-center vh-100 z-2 position-relative">
+            <div class="col-md me-lg-4 mb-4">
                 <h1 class="fw-800 mb-3 fs-1 font-display" style="font-size: 2.75em !important;">Welcome to my <span
                         class="a2">portfolio</span>👋</h1>
                 <p class="fs-5 lh-sm">Hi, I'm <span class="p1 fw-semibold ">Hugo</span>. I'm an international student
@@ -88,7 +88,7 @@
                 </svg>
             </div>
 
-            <div class="z-1 ">
+            <div class="z-1">
                 <!-- make this bounce -->
                 <p class="text-center fst-italic user-select-none">learn more ✨<br>
                     <span class="material-symbols-rounded p1" style="font-size: 30px !important;">expand_more</span>
@@ -569,65 +569,90 @@
             </section>
         </div>
     </div>
-    
+    <hr class="container">
     <!-- section 5 - contact me -->
     <section id="contact-me" style="padding-top: 40px; margin-top: -40px;">
         <div class="container-fluid p-0 pt-5">
-            <div class="">
-                <div class="container pt-5">
-                    <div class="mb-4">
-                        <h1 class="p1 font-display fw-900 z-3"
-                            style="position: relative; transform: rotate(1deg); margin-top: -50px; top: 0;">Contact me</h1>
-                        <h1 class="p1 d-none d-md-block font-display fw-600 z-2"
-                            style="position: relative; transform: rotate(-1deg); margin-top: -47px; top: 0; margin-left: 40px; opacity: .2;">
-                            Contact me</h1>
-                        <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
-                            style="position: relative; transform: rotate(-3deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
-                            Contact me</h1>
-                    </div>
-                    <div class="mx-lg-5 px-lg-5">
-                        <h4 class="p1 pt-3 font-display fw-800">Send me an email!</h4>
-                        <p class="m-0">Work related: <a class="email" href="mailto:hugoli.atwork@gmail.com">hugoli.atwork@gmail.com</a></p>
-                        <p class="m">Personal: <a class="email" href="mailto:hu8go8li@gmail.com">hu8go8li@gmail.com</a></p>
-                        <p class="m-0">Aston University email: <a class="email" href="mailto:230422898@aston.ac.uk">230422898@aston.ac.uk</a><br>
-                        Student ID: 230422898
-                        </p>
-                    </div>
+            <div class="container">
+                <div class="mb-4 pt-5">
+                    <h1 class="p1 font-display fw-900 z-3"
+                        style="position: relative; transform: rotate(1deg); margin-top: -50px; top: 0;">Contact me</h1>
+                    <h1 class="p1 d-none d-md-block font-display fw-600 z-2"
+                        style="position: relative; transform: rotate(-1deg); margin-top: -47px; top: 0; margin-left: 40px; opacity: .2;">
+                        Contact me</h1>
+                    <h1 class="p1 d-none d-lg-block font-display fw-400 z-1"
+                        style="position: relative; transform: rotate(-3deg); margin-top: -47px; top: 0; margin-left: 80px; opacity: 0.10; ">
+                        Contact me</h1>
                 </div>
-                <section class="container pt-5 pb-5">
-                    <div class="pb-5 mx-lg-5 px-lg-5">
-                        <h4 class="p1 font-display fw-800 text-center">Enquire here</h4>
-                        <div class="mb-2">
-                            <label for="inputEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-2">
-                            <label for="inputConfirmEmail" class="form-label">Confirm email address</label>
-                            <input type="email" class="form-control" id="inputConfirmEmail" placeholder="name@example.com">
-                        </div>
-                        <div class="row row-cols-2">
-                            <div class="mb-2 col-8 col-md-4">
-                                <label for="inputDateTime" class="form-label">Date & time</label>
-                                <input type="datetime-local" class="form-control" id="inputDateTime">
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <label for="inputDuration" class="form-label">Duration</label>
-                                <input type="number" class="form-control" id="inputDuration" aria-describedby="durationHelp" placeholder="-">
-                                <div id="durationHelp" class="form-text">in minutes</div>
-                            </div>
-                        </div>
-                        <div class="mb-2">
-                            <label for="inputText" class="form-label">Message</label>
-                            <textarea type="text" class="form-control" id="inputText" rows="5"></textarea>
-                        </div>
-                        <div class="text-end">
-                            <a class="button-transparent fs-5 font-display fw-500" href="#">
-                                Send message<span
-                                    class="material-symbols-rounded fs-2 button-transparent-arrow ps-2">send</span>
-                            </a>
+                <div class="row row-cols-lg-2">
+                    <div class="col-lg-4">    
+                        <div class="">
+                            <h4 class="p1 pt-3 pt-lg-3 font-display fw-800">Send me an email!</h4>
+                            <p class="m-0">Work related: <a class="email fw-500" href="mailto:hugoli.atwork@gmail.com">hugoli.atwork@gmail.com</a></p>
+                            <p class="m">Personal: <a class="email fw-500" href="mailto:hu8go8li@gmail.com">hu8go8li@gmail.com</a></p>
+                            <p class="m-0">Aston University email: <a class="email fw-500" href="mailto:230422898@aston.ac.uk">230422898@aston.ac.uk</a><br>
+                            <span class="fst-italic opacity-75 small">Student ID: 230422898</span>
+                            </p>
                         </div>
                     </div>
-                </section>
+                    <section class="pt-5 pt-lg-3 pb-5 col-lg-8">
+                        <form class="pb-5">
+                            <h4 class="p1 font-display fw-800 text-center">Enquire here</h4>
+                            <div class="mb-2 col-md-4 pe-lg-3">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="inputConfirmEmail" class="form-label">Confirm email address</label>
+                                <input type="email" class="form-control" id="inputConfirmEmail" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-2 col-md-4 pe-lg-3">
+                                <label for="inputPhoneNumber" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="" required>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="mb-2 col-8 col-md-4">
+                                    <label for="inputDateTime" class="form-label">Date & time</label>
+                                    <input type="datetime-local" class="form-control" id="inputDateTime" required>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <label for="inputDuration" class="form-label">Duration</label>
+                                    <input type="number" class="form-control" id="inputDuration" aria-describedby="durationHelp" placeholder="-" required>
+                                    <div id="durationHelp" class="form-text">in minutes</div>
+                                </div>
+                                <div class="col-4 col-md-6">
+                                    <label for="inputPreference" class="form-label col">Contact preference</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioEmail" checked>
+                                        <label class="form-check-label" for="radioEmail">
+                                          Email
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioPhone">
+                                        <label class="form-check-label" for="radioPhone">
+                                          Phone
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="inputText" class="form-label">Message</label>
+                                <textarea type="text" class="form-control" id="inputText" rows="5" required></textarea>
+                            </div>
+                            <div class="text-end">
+                                <a class="button-transparent fs-5 font-display fw-500 submit" href="#">
+                                    Send message<span
+                                        class="material-symbols-rounded fs-2 button-transparent-arrow ps-2">send</span>
+                                </a>
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
         </div>
     </section>
