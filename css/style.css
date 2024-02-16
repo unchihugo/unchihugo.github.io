@@ -96,7 +96,7 @@ nav {
     padding: 10px 24px 10px 24px;
     text-decoration: none;
     border-radius: 120px;
-    transition-duration: 1000ms;
+    transition-duration: 250ms;
     display: inline-block;
 }
 
@@ -114,9 +114,10 @@ nav {
     padding: 10px 24px;
     text-decoration: none;
     border-radius: 120px;
-    transition-duration: 1000ms;
+    transition-duration: 250ms;
     display: inline-block;
     flex-wrap: wrap;
+    border: none;
 }
 
 .button-transparent:hover {
@@ -148,6 +149,27 @@ nav {
 .button-transparent:hover .button-transparent-arrow-left {
     margin-left: 0px;
     transform: translate(-6px, 0);
+}
+
+.toast {
+    backdrop-filter: blur(4px);
+    padding: 2px 8px;
+    border-radius: 10px !important;
+}
+
+#bouncingText {
+    animation: bounce 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(16px);
+    }
 }
 
 /* colour modifiers */

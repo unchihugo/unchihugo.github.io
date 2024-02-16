@@ -88,7 +88,7 @@
                 </svg>
             </div>
 
-            <div class="z-1">
+            <div class="z-1" id="bouncingText">
                 <!-- make this bounce -->
                 <p class="text-center fst-italic user-select-none">learn more ✨<br>
                     <span class="material-symbols-rounded p1" style="font-size: 30px !important;">expand_more</span>
@@ -130,7 +130,7 @@
                             <img src="https://c6.rbxcdn.com/877ba90bef6ecb4a10a5127e1b0ab62e" alt="Overgrown vegetation" />
                         </a>
                     </div>
-                    <div style="--r: 5; --y: 185; --x: 100; z-index: 4; scale: 1.1;" class="card-collage">
+                    <div style="--r: 5; --y: 165; --x: 100; z-index: 4; scale: 1.1;" class="card-collage">
                         <a href="https://c7.rbxcdn.com/08bd838c14669f3739c16c400713c7dd" target="_blank">
                             <img src="https://c7.rbxcdn.com/08bd838c14669f3739c16c400713c7dd"
                                 alt="Bedroom with carpentry workshop" />
@@ -600,40 +600,40 @@
                             <h4 class="p1 font-display fw-800 text-center">Enquire here</h4>
                             <div class="mb-2 col-md-4 pe-lg-3">
                                 <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="" required>
+                                <input type="text" class="form-control" id="inputName" placeholder="*" required>
                             </div>
                             <div class="mb-2">
                                 <label for="inputEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com *" required>
                             </div>
                             <div class="mb-2">
                                 <label for="inputConfirmEmail" class="form-label">Confirm email address</label>
-                                <input type="email" class="form-control" id="inputConfirmEmail" placeholder="name@example.com" required>
+                                <input type="email" class="form-control" id="inputConfirmEmail" placeholder="name@example.com *" required>
                             </div>
                             <div class="mb-2 col-md-4 pe-lg-3">
                                 <label for="inputPhoneNumber" class="form-label">Phone number</label>
-                                <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="" required>
+                                <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="*" required>
                             </div>
                             <div class="row row-cols-2">
-                                <div class="mb-2 col-8 col-md-4">
+                                <div class="col-8 col-md-4">
                                     <label for="inputDateTime" class="form-label">Date & time</label>
-                                    <input type="datetime-local" class="form-control" id="inputDateTime" required>
+                                    <input type="datetime-local" class="form-control" id="inputDateTime" req>
                                 </div>
                                 <div class="col-4 col-md-2">
                                     <label for="inputDuration" class="form-label">Duration</label>
-                                    <input type="number" class="form-control" id="inputDuration" aria-describedby="durationHelp" placeholder="-" required>
+                                    <input type="number" class="form-control" id="inputDuration" aria-describedby="durationHelp" placeholder="- *" required>
                                     <div id="durationHelp" class="form-text">in minutes</div>
                                 </div>
-                                <div class="col-4 col-md-6">
+                                <div class="mb-2 col-4 col-md-6">
                                     <label for="inputPreference" class="form-label col">Contact preference</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioEmail" checked>
+                                        <input class="form-check-input" type="radio" name="radio" id="radioEmail" value="email" checked>
                                         <label class="form-check-label" for="radioEmail">
                                           Email
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioPhone">
+                                        <input class="form-check-input" type="radio" name="radio" id="radioPhone" value="phone">
                                         <label class="form-check-label" for="radioPhone">
                                           Phone
                                         </label>
@@ -642,15 +642,36 @@
                             </div>
                             <div class="mb-2">
                                 <label for="inputText" class="form-label">Message</label>
-                                <textarea type="text" class="form-control" id="inputText" rows="5" required></textarea>
+                                <textarea type="text" class="form-control" id="inputText" rows="5" placeholder="Start writing!" required></textarea>
                             </div>
                             <div class="text-end">
-                                <a class="button-transparent fs-5 font-display fw-500 submit" href="#">
+                                <button class="button-transparent fs-5 font-display fw-500 submit" href="#">
                                     Send message<span
                                         class="material-symbols-rounded fs-2 button-transparent-arrow ps-2">send</span>
-                                </a>
+                                </button>
                             </div>
                         </form>
+                        <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+                            <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                  <div class="toast-body" id="liveToastText">
+                                    toast
+                                  </div>
+                                  <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- <div class="toast-container position-fixed bottom-10 start-50 translate-middle-x p-3">
+                            <div id="sendToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-body">
+                                  <span id="sendToastText">toast2</span>
+                                  <div class="mt-2 pt-2 border-top">
+                                    <button type="button" class="btn btn-primary btn-sm">Confirm message</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="sendToast">Cancel</button>
+                                </div>
+                                </div>
+                              </div>
+                          </div> -->
                     </section>
                 </div>
             </div>
@@ -690,6 +711,7 @@
         crossorigin="anonymous"></script>
     <script src="./javascript/navscroll.js"></script>
     <script src="./javascript/card-collage-hover.js"></script>
+    <script src="./javascript/contact-validation.js"></script>
 </body>
 
 </html>
