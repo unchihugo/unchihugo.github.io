@@ -1,3 +1,4 @@
+// change z-index of card-collage on hover to 1000
 const cardCollages = document.querySelectorAll('.card-collage');
 
 cardCollages.forEach(collage => {

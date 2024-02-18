@@ -263,14 +263,6 @@ nav {
     text-shadow: 12px 0px 0px rgb(156, 150, 214, .7);
 }
 
-.work-experience {
-    background-color: inherit;
-}
-
-.skills {
-    background-color: inherit;
-}
-
 .learn-more {
     background-color: var(--neutral2);
 }
@@ -285,34 +277,17 @@ nav {
 
 }
 
-.languages {
+.languages .education {
     background-color: rgba(156, 150, 214, .5);
     border: 1px solid var(--accent2);
     border-radius: 10px !important;
     backdrop-filter: blur(4px);
 }
 
-.education {
-    background-color: rgba(156, 150, 214, .5);
-    border: 1px solid var(--accent2);
-    border-radius: 10px !important;
-    backdrop-filter: blur(4px);
-}
-
-.interests {
+/* required classes for assignment */
+.interests .projects .project .submit .work-experience .skills {
     background-color: inherit;
-}
-
-.projects {
-    background-color: inherit;
-}
-
-.project {
-    background-color: inherit;
-}
-
-.submit {
-    background-color: inherit;
+    color: inherit;
 }
 
 .thumbnail-img {
