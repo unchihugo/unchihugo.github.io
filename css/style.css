@@ -173,6 +173,10 @@ nav {
 }
 
 /* colour modifiers */
+.n1 {
+    color: var(--neutral1) !important;
+}
+
 .n2 {
     color: var(--neutral2) !important;
 }
@@ -277,7 +281,7 @@ nav {
 
 }
 
-.languages .education {
+.languages, .education {
     background-color: rgba(156, 150, 214, .5);
     border: 1px solid var(--accent2);
     border-radius: 10px !important;
@@ -285,9 +289,13 @@ nav {
 }
 
 /* required classes for assignment */
-.interests .projects .project .submit .work-experience .skills {
+.interests, .projects, .project, .work-experience .skills {
     background-color: inherit;
     color: inherit;
+}
+
+.submit {
+    color: var(--primary1);
 }
 
 .thumbnail-img {
@@ -306,4 +314,8 @@ nav {
 /* for scrolling to contact section */
 #contact-me {
     background-color: var(--neutral2);
+}
+
+.contact-card {
+    border: var(--primary1) 1px solid;
 }
