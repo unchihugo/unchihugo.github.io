@@ -348,3 +348,8 @@ nav {
 .branding-colour-neutral2 {
     filter: invert(89%) sepia(8%) saturate(662%) hue-rotate(303deg) brightness(92%) contrast(87%);
 }
+
+/* disable force dark mode */
+:root {
+    color-scheme: only light !important;
+  }
