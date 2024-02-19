@@ -17,6 +17,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .main-header {
@@ -318,4 +319,31 @@ nav {
 
 .contact-card {
     border: var(--primary1) 1px solid;
+}
+
+#page-loader {
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--neutral2);
+    color: white;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(.06,.27,.20,1);
+}
+
+#page-loader-content{
+    display: none;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.15s ease;
+}
+
+.branding-colour {
+    filter: invert(23%) sepia(9%) saturate(4537%) hue-rotate(306deg) brightness(93%) contrast(85%);
+}
+
+.branding-colour-neutral2 {
+    filter: invert(89%) sepia(8%) saturate(662%) hue-rotate(303deg) brightness(92%) contrast(87%);
 }
