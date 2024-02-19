@@ -17,7 +17,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .main-header {
@@ -322,10 +322,11 @@ nav {
 }
 
 #page-loader {
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     display: flex;
     text-align: center;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-color: var(--neutral2);
