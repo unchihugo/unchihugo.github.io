@@ -32,7 +32,6 @@ document.querySelectorAll('a').forEach(function (a) {
 });
 
 // show loader when new page is loaded or refreshed
-window.addEventListener('load', function () {
     const loader = document.querySelector('#page-loader');
     const content = document.querySelector('#page-loader-content');
     const text = document.querySelector('#page-loader-content p');
@@ -40,7 +39,7 @@ window.addEventListener('load', function () {
     loader.style.top = 0;
 
     var random = Math.floor(Math.random() * 10);
-    if (random < 5) random = -(random + 3);
+    if (random < 5) random = -(random + 8);
     else random += 3;
 
     // select random loading message
@@ -66,5 +65,4 @@ window.addEventListener('load', function () {
             }, 150);
         }, 1000);
     }, 10);
-});
 
