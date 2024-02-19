@@ -32,7 +32,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
 }
 
 .card-collage {
