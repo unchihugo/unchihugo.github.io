@@ -37,7 +37,11 @@ function validateForm() {
     }
 
     // show confirmation message with formatted content of the message
-    if (confirm('To: 230422898@aston.ac.uk\n\n' + document.getElementById('inputText').value + '\n\nPrefer to be contacted via ' + contactPreference + '\nConfirm message?')) {
+    if (confirm('From: ' + document.getElementById('inputEmail').value + '\n'
+    + 'To: 230422898@aston.ac.uk\n\n' 
+    + document.getElementById('inputText').value 
+    + '\n\nPrefer to be contacted via ' + contactPreference + ' at ' + document.getElementById('inputDateTime').value + ' for ' + document.getElementById('inputDuration').value + ' minutes'
+    + '\nConfirm message?')) {
         document.getElementById('inputText').value = '';
         document.getElementById('inputDateTime').value = '';
         document.getElementById('inputDuration').value = '';

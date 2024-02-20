@@ -14,6 +14,7 @@ document.querySelectorAll('a').forEach(function (a) {
     a.addEventListener('click', function (e) {
         if (this.getAttribute('href').startsWith('mailto')) return;
         if (this.getAttribute('href').startsWith('#')) return;
+        if (this.getAttribute('target') === '_blank') return;
         e.preventDefault();
 
         const destination = this.getAttribute('href');
