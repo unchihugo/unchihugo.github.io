@@ -303,7 +303,8 @@ nav {
 .interests,
 .projects,
 .project,
-.work-experience .skills {
+.work-experience,
+.skills {
   background-color: inherit;
   color: inherit;
 }
