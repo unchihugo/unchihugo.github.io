@@ -2,7 +2,8 @@
 const loadingMessages = [
     'preparing the page for you <3',
     'putting everything in its place',
-    'moving things around',
+    'moving stuff around',
+    'tailoring the content :)',
     'getting things ready',
     'just a moment!',
     'collecting content for you <3',
