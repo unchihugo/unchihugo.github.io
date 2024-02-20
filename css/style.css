@@ -48,6 +48,10 @@ nav {
   transition-duration: 250ms !important;
 }
 
+.nav-link {
+  font-family: "Poppins", sans-serif; 
+}
+
 .nav-link:hover {
   transform: translate(0, -1px) !important;
 }
