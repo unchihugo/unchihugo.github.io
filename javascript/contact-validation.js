@@ -20,10 +20,10 @@ function validateForm() {
         return 'Emails do not match!';
     }
     if (checkDate() === false) {
-        return 'Please select a date and time starting from tomorrow, after 9:00 AM GMT+0.';
+        return 'Please select a date starting from tomorrow.';
     }
     if (checkDuration() === false) {
-        return 'Please enter a duration between 1 and 120 minutes.';
+        return 'Please enter a valid duration.';
     }
    
     // const sendToast = bootstrap.Toast.getOrCreateInstance(document.getElementById('sendToast'));
@@ -40,10 +40,10 @@ function validateForm() {
     if (confirm('From: ' + document.getElementById('inputEmail').value + '\n'
     + 'To: 230422898@aston.ac.uk\n\n' 
     + document.getElementById('inputText').value 
-    + '\n\nPrefer to be contacted via ' + contactPreference + ' at ' + document.getElementById('inputDateTime').value + ' for ' + document.getElementById('inputDuration').value + ' minutes'
+    + '\n\nPrefer to be contacted via ' + contactPreference + '\nProject to start at: ' + document.getElementById('inputDate').value + ' for ' + document.getElementById('inputDuration').value + ' days. \n'
     + '\nConfirm message?')) {
         document.getElementById('inputText').value = '';
-        document.getElementById('inputDateTime').value = '';
+        document.getElementById('inputDate').value = '';
         document.getElementById('inputDuration').value = '';
         return 'Message sent! I will get back to you soon. Thanks!';
     } else {
@@ -67,15 +67,16 @@ function checkEmails() {
 
 
 /**
- * Checks if the selected date is after tomorrow at 9.
- * @returns {boolean} True if the selected date is after tomorrow, otherwise false.
+ * Checks if the selected date is after today.
+ * @returns {boolean} True if the selected date is after today, otherwise false.
  */
 function checkDate() {
-    const dateTime = document.getElementById('inputDateTime').value;
+    const selectedDate = new Date(document.getElementById('inputDate').value);
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1); // set date to tomorrow
-    tomorrow.setHours(9, 0, 0, 0); // set time to 00:00:00
-    const selectedDate = new Date(dateTime);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    selectedDate.setHours(0, 0, 0, 0);
+    tomorrow.setHours(0, 0, 0, 0);
+
     if (selectedDate < tomorrow) {
         return false;
     }
@@ -89,7 +90,7 @@ function checkDate() {
  */
 function checkDuration() {
     const duration = document.getElementById('inputDuration').value;
-    if (duration >= 1 && duration <= 120) {
+    if (duration >= 1) {
         return true;
     }
     return false;
