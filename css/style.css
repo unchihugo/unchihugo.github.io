@@ -273,9 +273,8 @@ nav {
   margin: 0 auto;
 }
 
-/* more modifiers & classes required for assignment :) */
 .duplicate-shadow-right {
-  text-shadow: 12px 0px 0px rgb(156, 150, 214, 0.7);
+  /* text-shadow: 12px 0px 0px rgba(166, 157, 249, 0.5); */
 }
 
 .learn-more {
@@ -301,16 +300,6 @@ nav {
   border: 1px solid var(--accent2);
   border-radius: 10px !important;
   backdrop-filter: blur(4px);
-}
-
-/* required classes for assignment */
-.interests,
-.projects,
-.project,
-.work-experience,
-.skills {
-  background-color: inherit;
-  color: inherit;
 }
 
 .submit {
@@ -392,3 +381,18 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary1);
   }
+
+.skill-text {
+  color: var(--primary1);
+  background: linear-gradient(to bottom, #b1a7ff 25%, #7C72E5 55%, #7067CF 0%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 4px #b1a7ff);
+}
+.skill-icon {
+  color: var(--primary1);
+  background: linear-gradient(to bottom, #D1CBFF 25%, #7C72E5 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+}
