@@ -9,7 +9,6 @@ const loadingMessages = [
     'collecting content for you <3',
 ];
 
-
 // show loader when any link is clicked, excluding mailto, # and index#contact-me
 document.querySelectorAll('a').forEach(function (a) {
     a.addEventListener('click', function (e) {
@@ -34,37 +33,40 @@ document.querySelectorAll('a').forEach(function (a) {
 });
 
 // show loader when new page is loaded or refreshed
-    const loader = document.querySelector('#page-loader');
-    const content = document.querySelector('#page-loader-content');
-    const text = document.querySelector('#page-loader-content p');
+const loader = document.querySelector('#page-loader');
+const content = document.querySelector('#page-loader-content');
+const text = document.querySelector('#page-loader-content p');
 
-    loader.style.top = 0;
+content.style.opacity = '0';
+loader.style.top = window.innerHeight + 'px';
 
-    var random = Math.floor(Math.random() * 10);
-    if (random < 5) random = -(random + 8);
-    else random += 3;
+// loader.style.top = 0;
 
-    // select random loading message
-    const randomIndex = Math.floor(Math.random() * loadingMessages.length);
-    const randomMessage = loadingMessages[randomIndex];
+// var random = Math.floor(Math.random() * 10);
+// if (random < 5) random = -(random + 8);
+// else random += 3;
 
-    text.innerHTML = randomMessage;
+// // select random loading message
+// const randomIndex = Math.floor(Math.random() * loadingMessages.length);
+// const randomMessage = loadingMessages[randomIndex];
 
-    content.style.transform = `scale(0) rotate(${-random}deg)`;
-    content.style.display = 'block';
-    setTimeout(function () { // show content
-        content.style.opacity = '1';
-        content.style.transform = 'scale(1) rotate(0deg)';
-        setTimeout(function () { // hide content
-            content.style.opacity = '0';
-            content.style.transform = `scale(0) rotate(${random}deg)`;
-            setTimeout(function () { // slide loader out of view
-                loader.style.top = window.innerHeight + 'px';
+// text.innerHTML = randomMessage;
 
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                }, 250);
-            }, 150);
-        }, 1000);
-    }, 10);
+// content.style.transform = `scale(0) rotate(${-random}deg)`;
+// content.style.display = 'block';
+// setTimeout(function () { // show content
+//     content.style.opacity = '1';
+//     content.style.transform = 'scale(1) rotate(0deg)';
+//     setTimeout(function () { // hide content
+//         content.style.opacity = '0';
+//         content.style.transform = `scale(0) rotate(${random}deg)`;
+//         setTimeout(function () { // slide loader out of view
+//             loader.style.top = window.innerHeight + 'px';
+
+//             setTimeout(function () {
+//                 loader.style.display = 'none';
+//             }, 250);
+//         }, 150);
+//     }, 1000);
+// }, 10);
 
