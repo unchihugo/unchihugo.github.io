@@ -37,36 +37,36 @@ const loader = document.querySelector('#page-loader');
 const content = document.querySelector('#page-loader-content');
 const text = document.querySelector('#page-loader-content p');
 
-content.style.opacity = '0';
-loader.style.top = window.innerHeight + 'px';
+// content.style.opacity = '0';
+// loader.style.top = window.innerHeight + 'px';
 
-// loader.style.top = 0;
+loader.style.top = 0;
 
-// var random = Math.floor(Math.random() * 10);
-// if (random < 5) random = -(random + 8);
-// else random += 3;
+var random = Math.floor(Math.random() * 10);
+if (random < 5) random = -(random + 8);
+else random += 3;
 
-// // select random loading message
-// const randomIndex = Math.floor(Math.random() * loadingMessages.length);
-// const randomMessage = loadingMessages[randomIndex];
+// select random loading message
+const randomIndex = Math.floor(Math.random() * loadingMessages.length);
+const randomMessage = loadingMessages[randomIndex];
 
-// text.innerHTML = randomMessage;
+text.innerHTML = randomMessage;
 
-// content.style.transform = `scale(0) rotate(${-random}deg)`;
-// content.style.display = 'block';
-// setTimeout(function () { // show content
-//     content.style.opacity = '1';
-//     content.style.transform = 'scale(1) rotate(0deg)';
-//     setTimeout(function () { // hide content
-//         content.style.opacity = '0';
-//         content.style.transform = `scale(0) rotate(${random}deg)`;
-//         setTimeout(function () { // slide loader out of view
-//             loader.style.top = window.innerHeight + 'px';
+content.style.transform = `scale(0) rotate(${-random}deg)`;
+content.style.display = 'block';
+setTimeout(function () { // show content
+    content.style.opacity = '1';
+    content.style.transform = 'scale(1) rotate(0deg)';
+    setTimeout(function () { // hide content
+        content.style.opacity = '0';
+        content.style.transform = `scale(0) rotate(${random}deg)`;
+        setTimeout(function () { // slide loader out of view
+            loader.style.top = window.innerHeight + 'px';
 
-//             setTimeout(function () {
-//                 loader.style.display = 'none';
-//             }, 250);
-//         }, 150);
-//     }, 1000);
-// }, 10);
+            setTimeout(function () {
+                loader.style.display = 'none';
+            }, 250);
+        }, 150);
+    }, 1000);
+}, 10);
 
